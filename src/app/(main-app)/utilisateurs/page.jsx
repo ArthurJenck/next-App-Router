@@ -1,12 +1,12 @@
 import React from "react"
 
 const page = async () => {
-    // const users = await new Promise((resolve) => {
-    //     setTimeout(() => resolve(["Victor", "Sarah", "Anna"]), 2000)
-    // })
-    const users = await new Promise((resolve, reject) => {
-        setTimeout(() => reject(new Error("Aucun utilisateur trouvé")), 2000)
+    const users = await new Promise((resolve) => {
+        setTimeout(() => resolve(["Victor", "Sarah", "Anna"]), 2000)
     })
+    // const users = await new Promise((resolve, reject) => {
+    //     setTimeout(() => reject(new Error("Aucun utilisateur trouvé")), 2000)
+    // })
 
     return (
         <div className="mt-12">
